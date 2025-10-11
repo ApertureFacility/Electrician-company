@@ -1,7 +1,7 @@
 import CorporateSection from "../components/CorporateSection";
 import Footer from "../components/Footer";
 import GridMainPage from "../components/GridMainPage";
-import Header from "../components/Header";
+
 import RealizeSection from "../components/RealizeSection";
 
 function Home() {
@@ -12,8 +12,7 @@ function Home() {
       </div>
 
       <div className="relative z-10 flex flex-col h-full">
-        <Header />
-
+  
         <div className="flex-1 flex items-center px-4 sm:px-8 lg:px-[250px] text-white justify-start">
           <div className="text-left max-w-2xl">
             <h1 className="text-3xl sm:text-4xl font-bold drop-shadow-lg mb-4">
