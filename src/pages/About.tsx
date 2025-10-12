@@ -27,13 +27,13 @@ function About() {
 
   return (
     <>
-      <section className="py-16 bg-white relative">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center lg:px-[250px] bg-[url('/src/assets/Smilingabout.png')]">
+      <section className=" bg-white relative ">
+      <div className="grid py-20 px-4 sm:px-8 lg:px-[250px] grid-cols-1 md:grid-cols-2 gap-12 items-center bg-[url('/src/assets/Smilingabout.png')] bg-cover bg-center">
           <div>
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4">
+            <h2 className="text-3xl sm:text-4xl font-extrabold mb-5 text-amber-50">
               Готовые решения от РСЭМ
             </h2>
-            <p className="text-base sm:text-lg text-gray-700 mb-6">
+            <p className="text-base sm:text-lg text-amber-50 mb-6">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, iure
               atque dicta at consequuntur nemo similique aut praesentium nisi
               doloribus?
@@ -49,8 +49,8 @@ function About() {
           </div>
         </div>
 
-        <div className="max-w-6xl mx-auto px-6 ">
-          <h2 className="text-3xl font-bold mb-2 text-center">
+        <div className="max-w-6xl mx-auto px-6 mt-20">
+          <h2 className="text-3xl font-bold mb-2 text-centerpy-20">
             История компании РСЭМ насчитывает более 15 лет успешной работы
           </h2>
           <p className="text-gray-600 text-center mb-12">

@@ -2,7 +2,7 @@
 
 function CorporateSection() {
   return (
-    <section className="flex flex-col md:flex-row items-center justify-between px-4 sm:px-8 lg:px-[250px] py-16 max-w-7xl mx-auto">
+    <section className="flex gap-12 flex-col md:flex-row items-center justify-between px-4 sm:px-8 lg:px-[250px] py-16 max-w-7xl mx-auto">
 
     <div className="md:w-1/2 mb-8 md:mb-0">
       <h2 className="text-2xl sm:text-3xl font-bold mb-6">
