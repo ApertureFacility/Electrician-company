@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import CorporateSection from "../components/CorporateSection";
 import RealizeSection from "../components/RealizeSection";
+import arrowIcon from '/src/assets/arrowRighticon.png';
 
 function About() {
   const timeline = [
@@ -42,7 +43,7 @@ function About() {
             <button className="flex items-center gap-2 w-full sm:w-auto bg-blue-700 hover:bg-blue-800 px-6 py-3 rounded-lg font-semibold text-white transition-colors">
             <Link to="/solutions"><span>Перейти к решениям</span></Link>
               <img
-                src="/src/assets/arrowRighticon.png"
+                src={arrowIcon}
                 alt="ArrowRighticon"
                 className="w-5 h-5"
               />

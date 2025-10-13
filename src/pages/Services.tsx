@@ -6,7 +6,7 @@ export default function Services() {
   return (
     <div className="w-full overflow-x-hidden">
 
-      <section className="relative w-full h-[500px] sm:h-[600px] bg-[url('/src/assets/services-banner.jpg')] bg-center bg-cover">
+      <section className="relative w-full h-[500px] sm:h-[600px] bg-[url('/src/assets/elo2.webp')] bg-center bg-cover">
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="relative z-10 flex items-center justify-center h-full px-6 text-center">
           <div className="text-white max-w-2xl">
@@ -60,7 +60,6 @@ export default function Services() {
               аварийных ситуаций.
             </p>
           </div>
-
        
         </div>
       </section>

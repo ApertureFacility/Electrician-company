@@ -3,6 +3,7 @@ import GridMainPage from "../components/GridMainPage";
 import RealizeSection from "../components/RealizeSection";
 import maskGroup from "../assets/maskGroup.png";
 import { Link } from "react-router-dom";
+import arrowIcon from '/src/assets/arrowRighticon.png';
 
 function Home() {
   return (
@@ -46,11 +47,7 @@ function Home() {
             </p>
             <button className="flex items-center gap-2 w-full sm:w-auto bg-blue-700 hover:bg-blue-800 px-6 py-3 rounded-lg font-semibold text-white transition-colors">
             <Link to="/solutions"><span>Перейти к решениям</span></Link>
-              <img
-                src="/src/assets/arrowRighticon.png"
-                alt="ArrowRighticon"
-                className="w-5 h-5"
-              />
+            <img src={arrowIcon} alt="Arrow Right Icon" className="w-4 h-4" />
             </button>
           </div>
 
