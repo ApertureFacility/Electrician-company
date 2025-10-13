@@ -32,6 +32,3 @@ The site is built using **Vite**, **React**, **TypeScript**, and **Tailwind CSS*
 
 This project is licensed under the **MIT License**.
 
----
-
-Хочешь, чтобы я добавил краткое описание компании в начале (1–2 предложения о том, чем занимается RSEM)? Это сделает README чуть более “живым” для GitHub.
