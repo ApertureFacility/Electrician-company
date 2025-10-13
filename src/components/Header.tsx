@@ -15,13 +15,14 @@ function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="bg-[#201D1DCC] text-white py-4 px-4 sm:px-8 lg:px-[250px] flex items-center justify-between relative">
+    <header className="bg-gray-900 text-white py-4 px-4 sm:px-8 lg:px-[250px] flex items-center justify-between relative">
       <div className="flex items-center">
+      <Link to="/">
         <img
           src="/src/assets/headerLogo.png"
           alt="РСЭМ Логотип"
           className="h-10"
-        />
+        /></Link>
       </div>
 
       <nav className="hidden md:flex space-x-6">

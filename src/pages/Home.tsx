@@ -1,20 +1,16 @@
 import CorporateSection from "../components/CorporateSection";
-import Footer from "../components/Footer";
 import GridMainPage from "../components/GridMainPage";
-
 import RealizeSection from "../components/RealizeSection";
 
 function Home() {
   return (
-    <div className="relative w-screen h-screen">
-      <div className="absolute inset-0 bg-[url('/src/assets/elo.webp')] bg-no-repeat bg-center bg-cover">
-        <div className="absolute inset-0 bg-black/50"></div>
-      </div>
-
-      <div className="relative z-10 flex flex-col h-full">
-  
-        <div className="flex-1 flex items-center px-4 sm:px-8 lg:px-[250px] text-white justify-start">
-          <div className="text-left max-w-2xl">
+    <div className="w-full overflow-x-hidden">
+      <section className="relative w-full min-h-screen">
+        <div className="absolute inset-0 bg-[url('/src/assets/elo.webp')] bg-no-repeat bg-center bg-cover">
+          <div className="absolute inset-0 bg-black/50"></div>
+        </div>
+        <div className="relative z-10 flex items-center justify-start min-h-screen px-4 sm:px-8 lg:px-[250px] text-white">
+          <div className="max-w-2xl">
             <h1 className="text-3xl sm:text-4xl font-bold drop-shadow-lg mb-4">
               Электромонтажные работы
             </h1>
@@ -22,15 +18,16 @@ function Home() {
               На коммерческих объектах
             </span>
             <p className="text-base sm:text-lg mb-6">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Similique, velit!
+              Полная модернизация сети, установка нового щитового оборудования,
+              освещение и системы автоматики.
             </p>
             <button className="w-full sm:w-auto bg-blue-700 hover:bg-blue-800 px-6 py-3 rounded-lg font-semibold transition-colors">
               Подробнее
             </button>
           </div>
         </div>
-      </div>
+      </section>
+
 
       <section className="px-4 sm:px-8 lg:px-[250px] py-20 bg-gray-100">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -91,12 +88,9 @@ function Home() {
           </div>
         </div>
       </section>
-
       <GridMainPage />
       <RealizeSection />
-
       <CorporateSection />
-      <Footer />
     </div>
   );
 }
