@@ -7,6 +7,7 @@ import potolok from "../assets/potolok5.png";
 import podstanc from "../assets/podstanc8.png";
 import maslotrans from "../assets/maslotrans7.png";
 import lotki from "../assets/lotki9.png";
+import { Link } from "react-router-dom";
 
 function GridMainPage() {
   return (
@@ -77,9 +78,11 @@ function GridMainPage() {
           <img src={lotki} alt="Лотки" className="w-full h-48 object-cover" />
           <div className="p-2 text-center font-medium">Лотки</div>
         </div>
+        <Link to="/contacts">
         <div className="bg-blue-500 text-white flex items-center justify-center rounded-lg h-48 text-xl font-bold">
           Хотите связаться?
         </div>
+        </Link>
       </div>
     </div>
   );

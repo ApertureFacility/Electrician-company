@@ -8,6 +8,7 @@ import suxie6 from "../assets/suhie6.png";
 import maslotrans7 from "../assets/maslotrans7.png";
 import potolok5 from "../assets/potolok5.png";
 import podstanc8 from "../assets/podstanc8.png";
+import { Link } from "react-router-dom";
 
 const SolutionsPage: React.FC = () => {
   return (
@@ -29,11 +30,11 @@ const SolutionsPage: React.FC = () => {
             сложности — от квартир до промышленных предприятий. Учитываем все
             требования по безопасности, нагрузкам и энергоэффективности.
           </p>
-
+          <Link to="/contacts">
           <button className="inline-flex items-center gap-2 bg-blue-700 hover:bg-blue-800 px-8 py-3 rounded-xl font-semibold text-white text-base transition-all shadow-md hover:shadow-lg active:scale-95">
             <span>Связаться с нами</span>
             <img src={arrowRight} alt="ArrowRighticon" className="w-5 h-5" />
-          </button>
+          </button></Link>
         </div>
       </div>
 

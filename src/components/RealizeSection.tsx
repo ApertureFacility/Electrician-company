@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import bgImage from '/src/assets/Electrobackground.jpg';
 import arrowIcon from '/src/assets/arrowRighticon.png';
 
@@ -17,7 +18,7 @@ function RealizeSection() {
 
         <button className="flex items-center gap-3 bg-blue-600 text-white px-5 py-3 rounded-xl shadow-lg 
                            hover:bg-blue-700 transition focus:outline-none focus:ring-2 focus:ring-blue-400">
-          <span>К проектам</span>
+          <Link to="/project"><span>К проектам</span></Link>
           <img src={arrowIcon} alt="Arrow Right Icon" className="w-4 h-4" />
         </button>
       </div>

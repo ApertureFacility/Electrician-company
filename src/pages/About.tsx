@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import CorporateSection from "../components/CorporateSection";
 import RealizeSection from "../components/RealizeSection";
 
@@ -39,7 +40,7 @@ function About() {
               doloribus?
             </p>
             <button className="flex items-center gap-2 w-full sm:w-auto bg-blue-700 hover:bg-blue-800 px-6 py-3 rounded-lg font-semibold text-white transition-colors">
-              <span>Перейти к решениям</span>
+            <Link to="/solutions"><span>Перейти к решениям</span></Link>
               <img
                 src="/src/assets/arrowRighticon.png"
                 alt="ArrowRighticon"
