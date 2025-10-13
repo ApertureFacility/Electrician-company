@@ -1,5 +1,12 @@
-import  { useEffect, useState, type JSX } from "react";
+import { useEffect, useState, type JSX } from "react";
 
+
+import schit4 from "../assets/schit4.png";
+import suxie6 from "../assets/suhie6.png";
+import maslotrans7 from "../assets/maslotrans7.png";
+import podstanc8 from "../assets/podstanc8.png";
+import potolok5 from "../assets/potolok5.png";
+import elo from "../assets/elo.webp";
 
 type Project = {
   id: number;
@@ -15,35 +22,35 @@ const projectsData: Project[] = [
     id: 1,
     title: "Электроснабжение цеха",
     category: "Industrial",
-    image: "/src/assets/schit4.png",
+    image: schit4,
     description: "Полная модернизация сети, новые щитовые и автоматика.",
   },
   {
     id: 2,
     title: "Сухие помещения — монтаж",
     category: "Commercial",
-    image: "/src/assets/suhie6.png",
+    image: suxie6,
     description: "Монтаж и подключение осветительных групп.",
   },
   {
     id: 3,
     title: "Маслотранс трансформатор",
     category: "Industrial",
-    image: "/src/assets/maslotrans7.png",
+    image: maslotrans7,
     description: "Установка трансформаторного оборудования и защит.",
   },
   {
     id: 4,
     title: "Подстанция 8",
     category: "Industrial",
-    image: "/src/assets/podstanc8.png",
+    image: podstanc8,
     description: "Поставка и монтаж подстанции, комплексная проверка.",
   },
   {
     id: 5,
     title: "Новый потолок с подсветкой",
     category: "Renovation",
-    image: "/src/assets/potolok5.png",
+    image: potolok5,
     description: "Реконструкция освещения и инженерных трасс.",
   },
 ];
@@ -72,7 +79,10 @@ export default function Projects(): JSX.Element {
   return (
     <div className="w-full overflow-x-hidden">
 
-      <section className="relative w-full h-[340px] sm:h-[380px] md:h-[480px] bg-[url('/src/assets/elo.webp')] bg-center bg-cover">
+      <section
+        className="relative w-full h-[340px] sm:h-[380px] md:h-[480px] bg-center bg-cover"
+        style={{ backgroundImage: `url(${elo})` }}
+      >
         <div className="absolute inset-0 bg-black/45" />
         <div className="relative z-10 flex items-center h-full px-6 sm:px-12 lg:px-40">
           <div className="text-white max-w-2xl">
@@ -84,9 +94,7 @@ export default function Projects(): JSX.Element {
         </div>
       </section>
 
-
       <section className="py-12 px-4 sm:px-8 lg:px-40 bg-white">
-
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6 mb-8">
           <div className="flex items-center gap-3 flex-wrap">
             {(["All", "Industrial", "Commercial", "Renovation"] as const).map((c) => (
@@ -94,9 +102,19 @@ export default function Projects(): JSX.Element {
                 key={c}
                 onClick={() => setActive(c)}
                 className={`px-4 py-2 rounded-full text-sm font-medium transition 
-                  ${active === c ? "bg-blue-700 text-white" : "bg-gray-100 text-gray-700 hover:bg-gray-200"}`}
+                  ${
+                    active === c
+                      ? "bg-blue-700 text-white"
+                      : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                  }`}
               >
-                {c === "All" ? "Все" : c}
+                {c === "All"
+                  ? "Все"
+                  : c === "Industrial"
+                  ? "Промышленные"
+                  : c === "Commercial"
+                  ? "Коммерческие"
+                  : "Реконструкция"}
               </button>
             ))}
           </div>
@@ -134,9 +152,10 @@ export default function Projects(): JSX.Element {
           ))}
         </div>
 
-
         {visible.length === 0 && (
-          <div className="mt-12 text-center text-gray-600">Проекты не найдены в этой категории.</div>
+          <div className="mt-12 text-center text-gray-600">
+            Проекты не найдены в этой категории.
+          </div>
         )}
       </section>
 
