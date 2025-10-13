@@ -1,4 +1,4 @@
-
+import corporateMan from "../assets/corporateMan.png";
 
 function CorporateSection() {
   return (
@@ -18,11 +18,11 @@ function CorporateSection() {
     </div>
     
     <div className="md:w-1/2 flex justify-center">
-      <img
-        src="/src/assets/corporateMan.png"
-        alt="Корпоративная ответственность"
-        className="rounded-lg shadow-lg max-h-[400px] object-contain"
-      />
+    <img
+          src={corporateMan}
+          alt="Корпоративная ответственность"
+          className="rounded-lg shadow-lg max-h-[400px] object-contain"
+        />
     </div>
     </section>
   )

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import headerLogo from "../assets/headerLogo.png";
 
 const links = [
   { to: "/", label: "Главная" },
@@ -19,7 +20,7 @@ function Header() {
       <div className="flex items-center">
       <Link to="/">
         <img
-          src="/src/assets/headerLogo.png"
+          src={headerLogo}
           alt="РСЭМ Логотип"
           className="h-10"
         /></Link>

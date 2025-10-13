@@ -1,6 +1,7 @@
 import CorporateSection from "../components/CorporateSection";
 import GridMainPage from "../components/GridMainPage";
 import RealizeSection from "../components/RealizeSection";
+import maskGroup from "../assets/maskGroup.png";
 
 function Home() {
   return (
@@ -52,7 +53,7 @@ function Home() {
 
           <div className="flex justify-center">
             <img
-              src="/src/assets/maskGroup.png"
+              src={maskGroup}
               alt="Решения РСЭМ"
               className="rounded-2xl shadow-lg max-w-md w-full"
             />

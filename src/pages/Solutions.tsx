@@ -1,9 +1,22 @@
 import React from "react";
 
+import readyChoice from "../assets/ReadyChoise.png";
+import arrowRight from "../assets/arrowRighticon.png";
+import corporateMan from "../assets/corporateMan.png";
+import schit4 from "../assets/schit4.png";
+import suxie6 from "../assets/suhie6.png";
+import maslotrans7 from "../assets/maslotrans7.png";
+import potolok5 from "../assets/potolok5.png";
+import podstanc8 from "../assets/podstanc8.png";
+
 const SolutionsPage: React.FC = () => {
   return (
     <>
-      <div className="relative bg-[url('/src/assets/ReadyChoise.png')] bg-cover bg-center bg-no-repeat">
+
+      <div
+        className="relative bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${readyChoice})` }}
+      >
         <div className="absolute inset-0 bg-black/60"></div>
 
         <div className="relative z-10 max-w-4xl mx-auto text-left px-6 py-24 sm:py-32">
@@ -19,11 +32,7 @@ const SolutionsPage: React.FC = () => {
 
           <button className="inline-flex items-center gap-2 bg-blue-700 hover:bg-blue-800 px-8 py-3 rounded-xl font-semibold text-white text-base transition-all shadow-md hover:shadow-lg active:scale-95">
             <span>Связаться с нами</span>
-            <img
-              src="/src/assets/arrowRighticon.png"
-              alt="ArrowRighticon"
-              className="w-5 h-5"
-            />
+            <img src={arrowRight} alt="ArrowRighticon" className="w-5 h-5" />
           </button>
         </div>
       </div>
@@ -67,9 +76,9 @@ const SolutionsPage: React.FC = () => {
 
         <div className="grid md:grid-cols-2 gap-8 items-start mb-20">
           <img
-            src="/src/assets/corporateMan.png"
+            src={corporateMan}
             alt="Электромонтажник за работой"
-            className="shadow-md object-cover w-full h-[350px]"
+            className="shadow-md object-cover w-full h-[350px] rounded-xl"
           />
 
           <div className="space-y-6">
@@ -126,12 +135,12 @@ const SolutionsPage: React.FC = () => {
           <div className="flex flex-col items-center space-y-16">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 items-center w-full">
               <img
-                src="/src/assets/schit4.png"
+                src={schit4}
                 alt="Проект верхний левый"
-                className="w-full h-60 object-cover shadow-md"
+                className="w-full h-60 object-cover shadow-md rounded-xl"
               />
 
-              <div className="bg-white shadow-md px-6 py-6 text-center border border-gray-200">
+              <div className="bg-white shadow-md px-6 py-6 text-center border border-gray-200 rounded-xl">
                 <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">
                   Проект: Электроснабжение производственного цеха
                 </h3>
@@ -142,27 +151,27 @@ const SolutionsPage: React.FC = () => {
               </div>
 
               <img
-                src="/src/assets/suhie6.png"
+                src={suxie6}
                 alt="Проект верхний правый"
-                className="w-full h-60 object-cover shadow-md"
+                className="w-full h-60 object-cover shadow-md rounded-xl"
               />
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
               <img
-                src="/src/assets/maslotrans7.png"
+                src={maslotrans7}
                 alt="Проект нижний 1"
-                className="w-full h-48 object-cover shadow-md"
+                className="w-full h-48 object-cover shadow-md rounded-xl"
               />
               <img
-                src="/src/assets/potolok5.png"
+                src={potolok5}
                 alt="Проект нижний 2"
-                className="w-full h-48 object-cover shadow-md"
+                className="w-full h-48 object-cover shadow-md rounded-xl"
               />
               <img
-                src="/src/assets/podstanc8.png"
+                src={podstanc8}
                 alt="Проект нижний 3"
-                className="w-full h-48 object-cover shadow-md"
+                className="w-full h-48 object-cover shadow-md rounded-xl"
               />
             </div>
           </div>
