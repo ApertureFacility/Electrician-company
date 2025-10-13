@@ -1,4 +1,11 @@
 # ⚡ RSEM
+## 📸 Screenshots
+
+### Главная страница
+![Главная страница](./ReadmeImages/Screenshot_7.png)
+
+### Раздел проектов
+![Проекты](./ReadmeImages/Screenshot_8.png)
 
 **RSEM** is a modern landing website for an electrical engineering company.
 It includes several main sections:
